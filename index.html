@@ -6,20 +6,19 @@
     <style>
         body {font-family: sans-serif;text-align: center;margin-top: 50px;background-color: #000000;}
         h1 {color: #0066cc;}
-        p {color: #00ff00;font-size: 18px;}
-        .profil-bild {max-width: 1920px;width: 100%;height: auto;margin-top: 20px;border-radius: 0px;box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
-        .profil-video {max-width: 1920px;width: 100%;height: auto;margin-top: 40px;box-shadow: 0 4px 15px rgba(255,255,255,0.1);}
+        .profil-bild {max-width: 1920px;width: 100%;height: auto;margin-top: 20px;}
+        .profil-video {max-width: 1200px;width: 100%;height: auto;margin-top: 40px;}
     </style>
 </head>
 <body>
 
     <h1>Willkommen auf der Seite von Simon Binkert</h1>
 
-    <!-- Hier wird das Bild geladen -->
+    <!-- Bild (wird übersprungen, falls noch nicht da) -->
     <img src="mein-foto.jpg" alt="Foto von Simon Binkert" class="profil-bild">
 
-    <!-- Hier wird das Video geladen -->
-    <video controls poster="video-vorschaubild.jpg" class="profil-video">
+    <!-- Das Testvideo -->
+    <video controls class="profil-video">
         <source src="mein-video.mp4" type="video/mp4">
         Ihr Browser unterstützt das Video-Tag nicht.
     </video>
