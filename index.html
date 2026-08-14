@@ -1,12 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine neue Homepage</title>
+    <title>Simon's Homepage</title> <!-- Zeigt den Namen im Browser-Tab an -->
+    <style>
+        body {
+            font-family: sans-serif; 
+            text-align: center; 
+            margin-top: 50px;
+            background-color: #000000; /* DIESE ZEILE ÄNDERT DEN HINTERGRUND */
+        }
+        h1 { 
+            color: #0066cc; 
+        }
+        p {
+            color: #00ff00; /* DIESE ZEILE ÄNDERT DIE SCHRIFT AUF GRÜN */
+            font-size: 18px;
+        }
+        /* Styling für dein Bild */
+        .profil-bild {
+            max-width: 1920px;       /* Begrenzt die Breite des Bildes */
+            width: 100%;            /* Macht das Bild mobilfreundlich */
+            height: auto;           /* Behält das Seitenverhältnis bei */
+            margin-top: 20px;       /* Abstand nach oben zum Text */
+            border-radius: 0px;    /* Rundet die Ecken leicht ab */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Fügt einen weichen Schatten hinzu */
+        }
+        /* Styling für dein Video */
+        .profil-video {
+            max-width: 1920px;       /* Begrenzt die maximale Breite des Videos */
+            width: 100%;            /* Macht das Video mobilfreundlich */
+            height: auto;           /* Behält das Seitenverhältnis bei */
+            margin-top: 40px;       /* Etwas mehr Abstand nach oben zum Bild */
+            box-shadow: 0 4px 15px rgba(255,255,255,0.1); /* Heller Schatten auf dunklem Grund */
+        }
+    </style>
 </head>
 <body>
-    <h1>Willkommen auf meiner neuen, sicheren Webseite!</h1>
-    <p>Diese Seite läuft komplett kostenlos und ohne fehlerhafte Datenbanken über GitHub Pages.</p>
+
+    <h1>Willkommen auf der Seite von Simon Binkert</h1>
+
+    <!-- Hier wird das Bild geladen -->
+    <img src="mein-foto.jpg" alt="Foto von Simon Binkert" class="profil-bild">
+
+    <!-- Hier wird das Video zum Anklicken geladen -->
+    <video controls poster="video-vorschaubild.jpg" class="profil-video">
+        <source src="mein-video.mp4" type="video/mp4">
+        Dein Browser unterstützt dieses Videoformat nicht.
+    </video>
+
 </body>
 </html>
