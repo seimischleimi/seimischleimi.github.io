@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <title>Simon's Homepage</title>
     <style>
-        body {font-family: sans-serif;text-align: center;margin-top: 50px;background-color: #000000;}
+        body {font-family: sans-serif; text-align: center; margin-top: 50px; background-color: #000000; color: #ffffff;}
         h1 {color: #0066cc;}
-        .profil-bild {max-width: 1920px;width: 100%;height: auto;margin-top: 20px;}
-        .profil-video {max-width: 1200px;width: 100%;height: auto;margin-top: 40px;}
+        h2 {color: #0066cc; margin-top: 40px; border-bottom: 1px solid #1a1a1a; padding-bottom: 10px;}
+        p {color: #cccccc; font-size: 18px; line-height: 1.6; max-width: 800px; margin: 0 auto 20px auto;}
+        .section-box {background-color: #111111; padding: 20px; margin: 20px auto; max-width: 800px; border-radius: 8px; border: 1px solid #222222;}
+        .profil-bild {max-width: 100%; width: 100%; max-width: 600px; height: auto; margin-top: 20px;}
+        .profil-video {max-width: 100%; width: 100%; max-width: 800px; height: auto; margin-top: 20px;}
     </style>
 </head>
 <body>
 
     <h1>Willkommen auf der Seite von Simon Binkert</h1>
 
-    <!-- Bild (wird übersprungen, falls noch nicht da) -->
-    <img src="mein-foto.jpg" alt="Foto von Simon Binkert" class="profil-bild">
+    <!-- Hauptbereich -->
+    <div class="section-box">
+        <img src="mein-foto.jpg" alt="Foto von Simon Binkert" class="profil-bild">
+        <p>Schön, dass du vorbeischaust! Auf dieser Seite dreht sich alles um meine grossen Leidenschaften.</p>
+    </div>
 
-    <!-- Das Testvideo -->
-    <video controls class="profil-video">
-        <source src="mein-video.mp4" type="video/mp4">
-        Ihr Browser unterstützt das Video-Tag nicht.
-    </video>
+    <!-- Bereich: Musik -->
+    <div class="section-box">
+        <h2>🎵 Musik</h2>
+        <p>Hier entsteht bald der Bereich für meine Musik. Musik ist für mich pure Leidenschaft und sorgt immer für das richtige Wohlbefinden.</p>
+    </div>
+
+    <!-- Bereich: Flugsimulator -->
+    <div class="section-box">
+        <h2>✈️ Flugsimulator</h2>
+        <p>Ready for Takeoff! Die virtuelle Fliegerei fasziniert mich extrem. Hier werde ich bald Einblicke in meine Flüge teilen.</p>
+        
+        <!-- Dein Video ist jetzt hier sauber eingeordnet -->
+        <video controls class="profil-video">
+            <source src="mein-video.mp4" type="video/mp4">
+            Ihr Browser unterstützt das Video-Tag nicht.
+        </video>
+    </div>
 
 </body>
 </html>
