@@ -10,7 +10,7 @@
         .profil-bild {width: 100%; max-width: 600px; height: auto;}
         .profil-video {width: 100%; max-width: 800px; height: auto;}
         
-        /* Neuer, gestylter Button für den YouTube-Link */
+        /* Stylischer Button für den YouTube-Link */
         .geheim-button {
             display: inline-block;
             background-color: #222222;
@@ -34,17 +34,17 @@
 
     <h1>Welcome to the page of Simon Binkert</h1>
 
-    <!-- Der optimierte "Geheim-Link" als Button -->
+    <!-- Der "Geheim-Link" als Button -->
     <a href="https://youtube.com" target="_blank" class="geheim-button">do not click me!</a>
     
-    <!-- Image Section -->
+    <!-- Bild-Bereich -->
     <div class="section-box">
         <img src="mein-foto.jpg" alt="Photo of Simon Binkert" class="profil-bild">
         <br>
         <a href="mein-foto.jpg" target="_blank" style="color: #0066cc; font-size: 14px; display: inline-block; margin-top: 10px;">Bild in Originalgröße öffnen</a>
     </div>
 
-    <!-- Local Video Section -->
+    <!-- Lokales Video (Das funktionierende Video) -->
     <div class="section-box">
         <video controls class="profil-video">
             <source src="mein-video.mp4" type="video/mp4">
@@ -52,16 +52,12 @@
         </video>
     </div>
 
-    <!-- Vimeo Video Section (Plan B: Robuster Standard-Player) -->
+    <!-- Vimeo-Bereich nur als Textlink -->
     <div class="section-box">
-        <iframe src="https://vimeo.com" 
-                width="100%" 
-                height="450" 
-                frameborder="0" 
-                allow="autoplay; fullscreen; picture-in-picture" 
-                allowfullscreen 
-                style="max-width: 800px; border-radius: 4px;">
-        </iframe>
+        <p style="margin: 10px 0;">Hier geht es zu meinem zweiten Video:</p>
+        <a href="https://vimeo.com" target="_blank" style="color: #0066cc; font-size: 18px; font-weight: bold; text-decoration: underline;">
+            Mein Video auf Vimeo ansehen
+        </a>
     </div>
 
 </body>
