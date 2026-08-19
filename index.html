@@ -32,6 +32,7 @@
             Your browser does not support the video tag.
         </video>
     </div>
+    
     <!-- Vimeo Video Section -->
     <div class="section-box">
         <div class="video-container">
@@ -42,6 +43,14 @@
                     title="mein-video"></iframe>
         </div>
         <script src="https://vimeo.com"></script>
+        
+        <!-- Fallback Link für restriktive Browser (z.B. Firefox) -->
+        <p style="margin-top: 15px; font-size: 14px;">
+            Wird das Video nicht geladen? 
+            <a href="https://vimeo.com" target="_blank" style="color: #0066cc; text-decoration: underline;">
+                Direkt auf Vimeo ansehen
+            </a>
+        </p>
     </div>
     
 </body>
