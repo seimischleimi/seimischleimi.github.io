@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Simon's Homepage</title>
@@ -8,15 +7,35 @@
         body {font-family: sans-serif; text-align: center; margin-top: 50px; background-color: #000000; color: #ffffff;}
         h1 {color: #0066cc; margin-bottom: 40px;}
         .section-box {background-color: #111111; padding: 20px; margin: 20px auto; max-width: 800px; border-radius: 8px; border: 1px solid #222222;}
-        .profil-bild {max-width: 100%; width: 100%; max-width: 600px; height: auto;}
-        .profil-video {max-width: 100%; width: 100%; max-width: 800px; height: auto;}
+        .profil-bild {width: 100%; max-width: 600px; height: auto;}
+        .profil-video {width: 100%; max-width: 800px; height: auto;}
+        
+        /* Neuer, gestylter Button für den YouTube-Link */
+        .geheim-button {
+            display: inline-block;
+            background-color: #222222;
+            color: #ff3366;
+            padding: 10px 20px;
+            margin-bottom: 30px;
+            border: 1px solid #ff3366;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .geheim-button:hover {
+            background-color: #ff3366;
+            color: #ffffff;
+            box-shadow: 0 0 10px #ff3366;
+        }
     </style>
 </head>
 <body>
 
     <h1>Welcome to the page of Simon Binkert</h1>
 
-    <a href="https://www.youtube.com/watch?v=snO68aJTOpM" > do not klick me! </a>
+    <!-- Der optimierte "Geheim-Link" als Button -->
+    <a href="https://youtube.com" target="_blank" class="geheim-button">do not click me!</a>
     
     <!-- Image Section -->
     <div class="section-box">
@@ -25,33 +44,25 @@
         <a href="mein-foto.jpg" target="_blank" style="color: #0066cc; font-size: 14px; display: inline-block; margin-top: 10px;">Bild in Originalgröße öffnen</a>
     </div>
 
-    <!-- Video Section -->
+    <!-- Local Video Section -->
     <div class="section-box">
         <video controls class="profil-video">
             <source src="mein-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-    
-    <!-- Vimeo Video Section -->
+
+    <!-- Vimeo Video Section (Plan B: Robuster Standard-Player) -->
     <div class="section-box">
-        <div class="video-container">
-            <iframe src="https://vimeo.com" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    title="mein-video"></iframe>
-        </div>
-        <script src="https://vimeo.com"></script>
-        
-        <!-- Fallback Link für restriktive Browser (z.B. Firefox) -->
-        <p style="margin-top: 15px; font-size: 14px;">
-            Wird das Video nicht geladen? 
-            <a href="https://vimeo.com" target="_blank" style="color: #0066cc; text-decoration: underline;">
-                Direkt auf Vimeo ansehen
-            </a>
-        </p>
+        <iframe src="https://vimeo.com" 
+                width="100%" 
+                height="450" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture" 
+                allowfullscreen 
+                style="max-width: 800px; border-radius: 4px;">
+        </iframe>
     </div>
-    
+
 </body>
 </html>
